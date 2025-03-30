@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+      <!-- Banner (imagen centrada) -->
+      <div class="row justify-content-center">
+        <div class="col-12 banner-container">
+          <img src="../imagenes/alitas.png" class="banner
+          img-fluid" alt="Banner de la Página">
+        </div>
+      </div>
+    </div>
+
+     <!--barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">            
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Página 1</a>
+            <a class="nav-link" href="./pagina2.html">Página 2</a>
+            <a class="nav-link" href="./pagina3.html">Página 3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Menú</h1>
+
+    <!--menu con cards y popover-->
+
+    <div class="container" id="Menu">
+      <div class="row">
+          <div class="col-12 col-lg-6 p-4">
+              <!-- card -->
+              <div class="card p-2 shadow">
+                  <!-- popover -->
+                  <button type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-trigger="focus" title="Alitas" data-bs-content= "Nuestras ya emblematicas y deliciosas alitas (420 g) bañadas en tu salsa favorita, acompañadas de verduras bien fresquecitas y aderezo blue cheese. MXN 174.00">
+                      <img src="../imagenes/comida/alitas.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                  </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Alitas Snack</h5>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-lg-6 p-4">
+              <!-- card -->
+              <div class="card p-2 shadow">
+                  <!-- popover -->
+                  <button type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-trigger="focus" title="Papas a la francesa" data-bs-content="300 g de las clásicas y deliciosas papas a la francesa con queso. MXN 89.00">
+                      <img src="../imagenes/comida/papas-fritas-con-queso.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                  </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Papas a la francesa</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-12 col-lg-6 p-4">
+              <!-- card -->
+              <div class="card p-2 shadow">
+                  <!-- popover -->
+                  <button type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-trigger="focus" title="Hamburguesa" data-bs-content="Nuestra hamburguesa clásica preparada con jugosa y ahumada carne de res (200 gr) condimentada con una mezcla secreto de especias, queso cheddar derretido, lechuga y tomate sobre pan brioche con mantequilla. MXN 189.00">
+                      <img src="../imagenes/comida/hamburguesa.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                  </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa</h5>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-lg-6 p-4">
+              <!-- card -->
+              <div class="card p-2 shadow">
+                  <!-- popover -->
+                  <button type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-trigger="focus" title="Ensalada de pollo" data-bs-content="Tamaño Grande. Nuestra clásica ensalada de la casa hecha con lechugas mixtas, zanahoria rallada, pepino, y tomate, espolvoreada con queso parmesano, semillas de girasol y crujientes crutones, acompañada con aderezo Ranch. MXN 169.00">
+                      <img src="../imagenes/comida/ensalada-de-pollo.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                  </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Ensalada de pollo</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {return new bootstrap.Popover(popoverTriggerEl)})
+      var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {trigger: 'focus'})
+   </script>
+</body>

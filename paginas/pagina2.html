@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Banner (imagen centrada) -->
+    <div class="row justify-content-center">
+      <div class="col-12 banner-container">
+        <img src="../imagenes/alitas.png" class="banner
+         img-fluid" alt="Banner de la Página">
+      </div>
+    </div>
+  </div>
+     <!--barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">            
+          <div class="navbar-nav">
+            <a class="nav-link" href="./pagina1.html">Página 1</a>
+            <a class="nav-link active" aria-current="page" href="#">Página 2</a>
+            <a class="nav-link" href="./pagina3.html">Página 3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Sucursales</h1>
+
+    <!--acoordeon con sucursales-->
+
+    <div class="container" id="Sucursales">
+        <!-- accordion -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Cumbres
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> 
+                    <p>Dirección: Hacienda Peñuelas #6769, Residencial Cumbres, C.P. 64619</p>
+                    <p>Teléfono : 8110950602</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Paseo la Fé
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Dirección:  Plaza Comercial Paseo La Fe. Av. Miguel Aleman #200 , Col. La Talaverna C.P. 66473</p>
+                    <p>Teléfono: 8112975723</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Universidad
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Dirección: Av. Universidad #501 Col. Roble 2do Sector C.P. 66450</p>
+                    <p>Teléfono : 8183524859</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,22 @@
+.banner {
+      width: 50%;
+      height: auto; /* Define la altura del banner */
+      max-height: 250px; /* Limitar la altura del banner */
+      object-fit: cover; /* Asegura que la imagen se recorte apropiadamente */
+    }
+
+.back {
+    background-color:orange;
+    }
+
+.banner-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px; /* Define la altura del banner */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-color: black; /* Fondo negro en caso de que la imagen no cubra todo */
+      
+  }
+

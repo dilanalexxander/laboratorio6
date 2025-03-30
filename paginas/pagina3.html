@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Banner (imagen centrada) -->
+    <div class="row justify-content-center">
+      <div class="col-12 banner-container">
+        <img src="../imagenes/alitas.png" class="banner
+         img-fluid" alt="Banner de la Página">
+      </div>
+    </div>
+  </div>
+     <!--barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">            
+          <div class="navbar-nav">
+            <a class="nav-link" href="./pagina1.html">Página 1</a>
+            <a class="nav-link" href="./pagina2.html">Página 2</a>
+            <a class="nav-link active" aria-current="page" href="#">Página 3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Promociones</h1>
+
+    <!--scrollspy con cards-->
+
+    <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Happy Sundays</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Late Night</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">2x1 Boneless y Strippers</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">2x1 en Bebidas</a>
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div class="col-12 col-lg-6 p-4 " id="list-item-1">
+            <!-- card -->
+            <div class="card p-2 shadow">
+                    <img src="../imagenes/promo/ahorra70.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                <div class="card-body">
+                  <h5 class="card-title">Ahorra 70</h5>
+                </div>
+            </div>
+        </div>
+        <p>Ahorra $70 pesos en compras mínimas de $400 pesos. Válido los días Domingo del 1 al 31 de marzo del 2025. 
+            Válido únicamente para usuarios Uber One en todas las sucursales de Las Alitas en Nuevo León, Ciudad de México, 
+            Estado de México y Jalisco. No aplica con otras promociones ni descuentos no especificados. 
+            Consulta disponibilidad en plataforma.
+        </p>
+        
+        <div class="col-12 col-lg-6 p-4 " id="list-item-2">
+            <!-- card -->
+            <div class="card p-2 shadow">
+                    <img src="../imagenes/promo/latenight.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                <div class="card-body">
+                  <h5 class="card-title">Late Night</h5>
+                </div>
+            </div>
+        </div>
+        <p>Boneless Personales x $189 pesos los días Lunes a Viernes del 1 al 31 de marzo del 2025. Válido para todos los usuarios de Uber Eats en todas las sucursales de Las Alitas en Nuevo León, Ciudad de México, Estado de México y Jalisco. No aplica con otras promociones ni descuentos no especificados. Consulta disponibilidad en plataforma.
+        </p>
+
+        <div class="col-12 col-lg-6 p-4 " id="list-item-3">
+            <!-- card -->
+            <div class="card p-2 shadow">
+                    <img src="../imagenes/promo/2x1bys.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                <div class="card-body">
+                  <h5 class="card-title">2x1 Boneless y Strippers</h5>
+                </div>
+            </div>
+        </div>
+        <p>
+            2x1 en Boneless Personales y Strippers Clásicos. Válido exclusivamente en el comedor de Las Alitas
+             de lunes a jueves del 20 de febrero al 31 de diciembre de 2025 o hasta agotar existencias.
+            Promoción válida en todas las sucursales de Las Alitas en Nuevo León, Ciudad de México, Estados de México y Jalisco. 
+            No aplica con otros cupones, promociones ni descuentos. No aplica para llevar ni en apps de delivery.
+        </p>
+        <div class="col-12 col-lg-6 p-4 " id="list-item-4">
+            <!-- card -->
+            <div class="card p-2 shadow">
+                    <img src="../imagenes/promo/2x1_bebidas.jpg" class="img-fluid card-img-top" alt="Responsive image">
+                <div class="card-body">
+                  <h5 class="card-title">2x1 en Bebidas</h5>
+                </div>
+            </div>
+        </div>
+        <p>
+            2x1 en Boneless Personales y Strippers Clásicos. Válido exclusivamente en el comedor de Las Alitas
+             de lunes a jueves del 20 de febrero al 31 de diciembre de 2025 o hasta agotar existencias.
+            Promoción válida en todas las sucursales de Las Alitas en Nuevo León, Ciudad de México, Estados de México y Jalisco. 
+            No aplica con otros cupones, promociones ni descuentos. No aplica para llevar ni en apps de delivery.
+        </p>
+      </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+</body>

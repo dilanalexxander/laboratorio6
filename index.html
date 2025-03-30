@@ -6,11 +6,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Laboratorio 6</title>
-        <link rel="icon" type="image/x-icon" href="../imagenes/icono.ico">
+        <link rel="icon" type="image/x-icon" href="./imagenes/icono.ico">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 
     <body>
+
+      <!-- Carrusel de imagenes --> 
+        
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/banner/alitas-night-2x1-banner-web.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/banner/banner-web-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/banner/banner-web-15-off-take-out.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/banner/banner-web_66b263c1d36af.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/banner/los-nios-comen-gratis-banner-web.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
         <!--barra de navegacion-->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,6 +67,38 @@
               </div>
             </div>
           </nav>
+        <div class="container-fluid back">
+          <div class="row">
+            <div class="col">
+                <h1>Nuestra empresa</h1>
+                <p class="texto">Nuestro concepto es pionero en México especializándonos en alitas tipo búfalo, 
+                  creado en 1995 con gran distintivo en nuestras salsas. Ofrecemos una gran experiencia de sabor en categorías 
+                  como hamburguesas al carbón, sándwiches, boneless y alitas en un ambiente relajado con todo lo necesario para 
+                  brindarle a nuestros invitados una experiencia inigualable.
+                </p>
+                <p> 
+                  Nos seguimos renovando y transformando para crecer con un sólo objetivo en mente: Generar encuentros sensacionales. 
+                  En Las Alitas  te ofrecemos una experiencia única basada en: la calidad de alimentos, un  servicio que vuela, 
+                  la ambientación, la música, y nuestros característicos rituales.
+                </p>
+            </div>
+            <div class="col order-5">
+              <h1>Filosofía</h1>
+              <p>Nuestra filosofía se en basa en el trabajo en equipo para lograr los objetivos de negocio, 
+                siempre disfrutando lo que hacemos y teniendo mente abierta para aportar creatividad e innovación a nuestra marca.</p>
+              <p>En Las Alitas compartimos un enfoque constructivo a la mejora continua y es por esto que nos gusta reconocer 
+                públicamente el trabajo de calidad y bien hecho. Aprovechamos al máximo los recursos con los que contamos, 
+                dando a nuestro invitado la mejor experiencia en todo lo que hacemos.</p>
+            </div>
+            <div class="col order-1">
+              <h1>Misión</h1>
+              <p>Servimos encuentros que te conectan con quien más disfrutas, a través de sabores y experiencias sensacionales.</p>
+              <h1>Visión</h1>
+              <p>Ser la marca de restaurantes tipo casual favorita de México.</p>
+            </div>
+          </div>
+        </div>
 
-    
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
